@@ -32,39 +32,67 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVs-OL-zRL">
-                                <rect key="frame" x="121" y="279" width="173" height="62"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FS6-cS-P0C">
+                                <rect key="frame" x="-15" y="103" width="408" height="715"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.64705882349999999" green="0.75294117650000003" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Level 1"/>
-                                <connections>
-                                    <segue destination="fIl-pF-klT" kind="show" id="jQh-Ec-B4v"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ada-Di-rcv">
-                                <rect key="frame" x="121" y="408" width="173" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.64705882349999999" green="0.75294117650000003" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Level 2"/>
-                                <connections>
-                                    <segue destination="F4F-md-BKb" kind="show" id="DAn-m2-RFo"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3A-Wb-rj6">
-                                <rect key="frame" x="243" y="701" width="28" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.64705882349999999" green="0.75294117650000003" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="i"/>
-                                <connections>
-                                    <segue destination="ls8-Ns-eTF" kind="show" id="yji-aA-kka"/>
-                                </connections>
-                            </button>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="x9f-jg-ni7">
+                                <rect key="frame" x="110" y="313" width="173" height="226"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVs-OL-zRL">
+                                        <rect key="frame" x="0.0" y="0.0" width="173" height="62"/>
+                                        <color key="backgroundColor" red="0.64705882349999999" green="0.75294117650000003" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="173" id="4d7-lB-uGt"/>
+                                            <constraint firstAttribute="height" constant="62" id="Vrs-Re-A8j"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Level 1">
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="fIl-pF-klT" kind="show" id="jQh-Ec-B4v"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ada-Di-rcv">
+                                        <rect key="frame" x="0.0" y="82" width="173" height="62"/>
+                                        <color key="backgroundColor" red="0.64705882349999999" green="0.75294117650000003" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="62" id="JZo-rd-EXu"/>
+                                            <constraint firstAttribute="width" constant="173" id="TxV-fd-5uX"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Level 2">
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="F4F-md-BKb" kind="show" id="DAn-m2-RFo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3A-Wb-rj6">
+                                        <rect key="frame" x="0.0" y="164" width="173" height="62"/>
+                                        <color key="backgroundColor" red="0.64705882349999999" green="0.75294117650000003" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="62" id="jgq-da-Y8y"/>
+                                            <constraint firstAttribute="width" constant="173" id="kwL-6k-qMB"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Info">
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="ls8-Ns-eTF" kind="show" id="yji-aA-kka"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="B3R-xT-sOC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="x9f-jg-ni7" firstAttribute="centerY" secondItem="Fag-OQ-pXP" secondAttribute="centerY" id="9pv-kS-KC7"/>
+                            <constraint firstItem="x9f-jg-ni7" firstAttribute="centerX" secondItem="Fag-OQ-pXP" secondAttribute="centerX" id="ZNn-3T-F8R"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ag5-yi-ppd"/>
                 </viewController>
@@ -79,6 +107,12 @@
                     <view key="view" contentMode="scaleToFill" id="a78-cG-nOL">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bD1-3p-MPd">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="zXz-kU-2bb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -86,7 +120,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dBq-9X-50B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-109" y="1127"/>
+            <point key="canvasLocation" x="-109.16030534351144" y="1126.7605633802818"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="5wf-TE-vbf">
@@ -96,12 +130,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kmp-tL-KHD">
-                                <rect key="frame" x="117" y="321" width="159" height="72"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MTZ-ln-KrZ">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kmp-tL-KHD">
+                                <rect key="frame" x="110" y="395" width="173" height="62"/>
+                                <color key="backgroundColor" red="0.64705882349999999" green="0.75294117650000003" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="173" id="1Cz-J2-f5l"/>
+                                    <constraint firstAttribute="height" constant="62" id="UW4-Nx-xim"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Story 1 title"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Story 1 title">
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="dIh-F6-XcM" kind="show" id="1wF-rk-JGe"/>
                                 </connections>
@@ -109,6 +152,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3Oh-UF-ASO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Kmp-tL-KHD" firstAttribute="centerY" secondItem="b9T-S7-9eI" secondAttribute="centerY" id="by4-pn-ZUR"/>
+                            <constraint firstItem="Kmp-tL-KHD" firstAttribute="centerX" secondItem="b9T-S7-9eI" secondAttribute="centerX" id="jtl-qO-YBL"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gBU-q2-0y5"/>
                 </viewController>
@@ -124,12 +171,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8qx-sm-kyx">
-                                <rect key="frame" x="159" y="333" width="119" height="68"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mrd-5V-XHn">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8qx-sm-kyx">
+                                <rect key="frame" x="110" y="735.66666666666663" width="173" height="62"/>
+                                <color key="backgroundColor" red="0.64705882349999999" green="0.75294117650000003" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="173" id="2bD-6e-Nc5"/>
+                                    <constraint firstAttribute="height" constant="62" id="9Dn-Eq-Cww"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next">
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="hOt-eb-rQB" kind="show" id="Eho-VD-PnS"/>
                                 </connections>
@@ -137,6 +193,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qkv-mb-6Kv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8qx-sm-kyx" firstAttribute="centerX" secondItem="B4x-GN-dQW" secondAttribute="centerX" id="3ak-h0-98L"/>
+                            <constraint firstItem="8qx-sm-kyx" firstAttribute="centerY" secondItem="B4x-GN-dQW" secondAttribute="centerY" multiplier="1.8" id="8Ay-aV-OfH"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZGE-fK-ZSk"/>
                 </viewController>
@@ -151,6 +211,12 @@
                     <view key="view" contentMode="scaleToFill" id="TL9-kq-7vF">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MSp-zr-o49">
+                                <rect key="frame" x="0.0" y="103" width="391" height="715"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="psz-zi-3WE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -158,7 +224,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rxy-lq-W7i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2088" y="970"/>
+            <point key="canvasLocation" x="2087.7862595419847" y="969.71830985915494"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="AlX-LK-1iK">
@@ -168,29 +234,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRI-rU-8Xe">
-                                <rect key="frame" x="124" y="307" width="162" height="65"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="psl-Iu-TEd">
+                                <rect key="frame" x="0.0" y="103" width="394" height="715"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.75294117650000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Story 1 title"/>
-                                <connections>
-                                    <segue destination="e31-o8-hnd" kind="show" id="g6t-cc-qml"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsF-qU-0E4">
-                                <rect key="frame" x="124" y="412" width="162" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.75294117650000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Story 1 title"/>
-                                <connections>
-                                    <segue destination="nP1-tt-F06" kind="show" id="ZZk-PB-dEN"/>
-                                </connections>
-                            </button>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ZIG-06-qSe">
+                                <rect key="frame" x="110" y="354" width="173" height="144"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRI-rU-8Xe">
+                                        <rect key="frame" x="0.0" y="0.0" width="173" height="62"/>
+                                        <color key="backgroundColor" red="0.64705882349999999" green="0.75294117650000003" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="62" id="2Qv-Jj-apJ"/>
+                                            <constraint firstAttribute="width" constant="173" id="moK-Cv-HyN"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Story 1 title">
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="e31-o8-hnd" kind="show" id="g6t-cc-qml"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsF-qU-0E4">
+                                        <rect key="frame" x="0.0" y="82" width="173" height="62"/>
+                                        <color key="backgroundColor" red="0.64705882349999999" green="0.75294117650000003" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="62" id="9sX-hc-a8l"/>
+                                            <constraint firstAttribute="width" constant="173" id="Ggs-cV-Ccj"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Story 1 title">
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="nP1-tt-F06" kind="show" id="ZZk-PB-dEN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yRN-QT-rhA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZIG-06-qSe" firstAttribute="centerX" secondItem="aHx-Bc-xdX" secondAttribute="centerX" id="BeK-Xu-Hm0"/>
+                            <constraint firstItem="ZIG-06-qSe" firstAttribute="centerY" secondItem="aHx-Bc-xdX" secondAttribute="centerY" id="KiH-nH-VxK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kyg-AO-VQ8"/>
                 </viewController>
@@ -205,6 +294,12 @@
                     <view key="view" contentMode="scaleToFill" id="xjs-dD-qnT">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PLQ-sR-GEP">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="xhn-47-ypq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -212,7 +307,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ei-BV-B27" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1347" y="202"/>
+            <point key="canvasLocation" x="1345.8015267175572" y="201.40845070422537"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Sbz-ky-ycb">
@@ -222,12 +317,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNe-fG-EYR">
-                                <rect key="frame" x="125" y="339" width="143" height="63"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fLa-lp-Q8y">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNe-fG-EYR">
+                                <rect key="frame" x="110" y="735.66666666666663" width="173" height="62"/>
+                                <color key="backgroundColor" red="0.64705882349999999" green="0.75294117650000003" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="173" id="a6I-dq-a4C"/>
+                                    <constraint firstAttribute="height" constant="62" id="ako-Gn-pty"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next">
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="s36-zu-yzk" kind="show" id="Ldy-dN-RIn"/>
                                 </connections>
@@ -235,12 +339,16 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wGv-4c-3c8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gNe-fG-EYR" firstAttribute="centerX" secondItem="K2Q-qg-mZc" secondAttribute="centerX" id="gmG-tx-Vjc"/>
+                            <constraint firstItem="gNe-fG-EYR" firstAttribute="centerY" secondItem="K2Q-qg-mZc" secondAttribute="centerY" multiplier="1.8" id="kHb-RO-gGk"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4ne-PK-GaR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="42R-yd-Thd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1315" y="-439"/>
+            <point key="canvasLocation" x="1313.7404580152672" y="-439.43661971830988"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="XGz-30-lO5">
@@ -249,6 +357,12 @@
                     <view key="view" contentMode="scaleToFill" id="tkf-q9-zPa">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wBI-Qx-hvW">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="c5A-Rn-cze"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -256,21 +370,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Ud-cL-EJx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2117" y="-433"/>
+            <point key="canvasLocation" x="2116.7938931297708" y="-433.0985915492958"/>
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemMintColor">
-            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
