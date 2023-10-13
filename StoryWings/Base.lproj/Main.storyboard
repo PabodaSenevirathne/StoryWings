@@ -24,10 +24,10 @@
             </objects>
             <point key="canvasLocation" x="-798" y="425"/>
         </scene>
-        <!--View Controller-->
+        <!--First View Controller-->
         <scene sceneID="DYc-n6-fDh">
             <objects>
-                <viewController id="xOq-Dz-cal" sceneMemberID="viewController">
+                <viewController id="xOq-Dz-cal" customClass="FirstViewController" customModule="StoryWings" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fag-OQ-pXP">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,15 +36,28 @@
                                 <rect key="frame" x="-15" y="103" width="408" height="715"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="x9f-jg-ni7">
-                                <rect key="frame" x="110" y="313" width="173" height="226"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3A-Wb-rj6">
+                                <rect key="frame" x="310" y="743.33333333333337" width="35" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.46274509803921571" green="0.72549019607843135" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="i">
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="infoButton:" destination="Owj-z2-bcb" eventType="touchUpInside" id="PAq-rg-OvR"/>
+                                    <segue destination="ls8-Ns-eTF" kind="show" id="yji-aA-kka"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="rvW-av-doZ">
+                                <rect key="frame" x="110" y="354" width="173" height="144"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVs-OL-zRL">
                                         <rect key="frame" x="0.0" y="0.0" width="173" height="62"/>
                                         <color key="backgroundColor" red="0.46274509803921571" green="0.72549019607843135" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="173" id="4d7-lB-uGt"/>
-                                            <constraint firstAttribute="height" constant="62" id="Vrs-Re-A8j"/>
+                                            <constraint firstAttribute="height" constant="62" id="6HR-AU-HJX"/>
+                                            <constraint firstAttribute="width" constant="173" id="gjY-TP-15i"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Level 1">
@@ -58,8 +71,8 @@
                                         <rect key="frame" x="0.0" y="82" width="173" height="62"/>
                                         <color key="backgroundColor" red="0.46274509803921571" green="0.72549019607843135" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="62" id="JZo-rd-EXu"/>
-                                            <constraint firstAttribute="width" constant="173" id="TxV-fd-5uX"/>
+                                            <constraint firstAttribute="width" constant="173" id="DzD-Pl-x3b"/>
+                                            <constraint firstAttribute="height" constant="62" id="d1r-IU-MuQ"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Level 2">
@@ -69,34 +82,35 @@
                                             <segue destination="F4F-md-BKb" kind="show" id="DAn-m2-RFo"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3A-Wb-rj6">
-                                        <rect key="frame" x="0.0" y="164" width="173" height="62"/>
-                                        <color key="backgroundColor" red="0.46274509803921571" green="0.72549019607843135" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="62" id="jgq-da-Y8y"/>
-                                            <constraint firstAttribute="width" constant="173" id="kwL-6k-qMB"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Info">
-                                            <color key="baseForegroundColor" systemColor="labelColor"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <segue destination="ls8-Ns-eTF" kind="show" id="yji-aA-kka"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story Wings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2r-Ey-hZP">
+                                <rect key="frame" x="80.666666666666686" y="188.66666666666666" width="232" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="C9K-NC-mCm"/>
+                                    <constraint firstAttribute="width" constant="232" id="x5X-KO-P3X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="41"/>
+                                <color key="textColor" red="0.20784313725490194" green="0.29019607843137252" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.46274509800000002" green="0.72549019609999998" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="B3R-xT-sOC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="x9f-jg-ni7" firstAttribute="centerY" secondItem="Fag-OQ-pXP" secondAttribute="centerY" id="9pv-kS-KC7"/>
-                            <constraint firstItem="x9f-jg-ni7" firstAttribute="centerX" secondItem="Fag-OQ-pXP" secondAttribute="centerX" id="ZNn-3T-F8R"/>
+                            <constraint firstItem="rvW-av-doZ" firstAttribute="centerX" secondItem="Fag-OQ-pXP" secondAttribute="centerX" id="OUp-m6-5xj"/>
+                            <constraint firstItem="c2r-Ey-hZP" firstAttribute="centerY" secondItem="Fag-OQ-pXP" secondAttribute="centerY" multiplier="0.5" id="Sqo-aC-fFK"/>
+                            <constraint firstItem="c2r-Ey-hZP" firstAttribute="centerX" secondItem="Fag-OQ-pXP" secondAttribute="centerX" id="W89-YP-UTV"/>
+                            <constraint firstItem="rvW-av-doZ" firstAttribute="centerY" secondItem="Fag-OQ-pXP" secondAttribute="centerY" id="pwb-m4-YR0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ag5-yi-ppd"/>
+                    <connections>
+                        <outlet property="infoButton" destination="t3A-Wb-rj6" id="893-9C-DSA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kzt-uG-xSO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Owj-z2-bcb" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-110.68702290076335" y="424.64788732394368"/>
         </scene>

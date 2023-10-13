@@ -16,6 +16,7 @@
 		D7B9DA372AD45F300092C3B5 /* StoryWingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B9DA362AD45F300092C3B5 /* StoryWingsTests.swift */; };
 		D7B9DA412AD45F300092C3B5 /* StoryWingsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B9DA402AD45F300092C3B5 /* StoryWingsUITests.swift */; };
 		D7B9DA432AD45F300092C3B5 /* StoryWingsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B9DA422AD45F300092C3B5 /* StoryWingsUITestsLaunchTests.swift */; };
+		D7E510022AD9018B00A1A445 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E510012AD9018B00A1A445 /* FirstViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		D7B9DA3C2AD45F300092C3B5 /* StoryWingsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoryWingsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7B9DA402AD45F300092C3B5 /* StoryWingsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryWingsUITests.swift; sourceTree = "<group>"; };
 		D7B9DA422AD45F300092C3B5 /* StoryWingsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryWingsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D7E510012AD9018B00A1A445 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				D7B9DA282AD45F2F0092C3B5 /* Assets.xcassets */,
 				D7B9DA2A2AD45F2F0092C3B5 /* LaunchScreen.storyboard */,
 				D7B9DA2D2AD45F2F0092C3B5 /* Info.plist */,
+				D7E510012AD9018B00A1A445 /* FirstViewController.swift */,
 			);
 			path = StoryWings;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				D7B9DA242AD45F2F0092C3B5 /* ViewController.swift in Sources */,
 				D7B9DA202AD45F2F0092C3B5 /* AppDelegate.swift in Sources */,
 				D7B9DA222AD45F2F0092C3B5 /* SceneDelegate.swift in Sources */,
+				D7E510022AD9018B00A1A445 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
