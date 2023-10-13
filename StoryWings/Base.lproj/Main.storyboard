@@ -127,26 +127,24 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="aaZ-Iz-AwR">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="The app level 1 cover a wide range of story topics and age groups, from bedtime stories for toddlers." textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="aaZ-Iz-AwR">
                                 <rect key="frame" x="0.0" y="342.33333333333331" width="393" height="82"/>
                                 <color key="backgroundColor" red="0.96470588235294119" green="0.76470588235294112" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="82" id="Pf4-2m-7ew"/>
                                     <constraint firstAttribute="width" constant="393" id="yYh-dG-I6L"/>
                                 </constraints>
-                                <string key="text">Em nesum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod lllllllllllll tempor                                                                                 </string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Jsr-gZ-cYy">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This app level 2 cover a wide range of topics and age groups, from bedtime stories for older kids." textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Jsr-gZ-cYy">
                                 <rect key="frame" x="0.0" y="555.33333333333337" width="393" height="82"/>
                                 <color key="backgroundColor" red="0.96470588235294119" green="0.76470588235294112" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="393" id="Jhc-Zs-fwN"/>
                                     <constraint firstAttribute="height" constant="82" id="U1m-uY-hoi"/>
                                 </constraints>
-                                <string key="text">Em nesum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod lllllllllllll tempor                                                                                 </string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -261,13 +259,14 @@
                                     <segue destination="hOt-eb-rQB" kind="show" id="Eho-VD-PnS"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Em nesum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod lllllllllllll tempor " textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="rZw-rl-B3p">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="rZw-rl-B3p">
                                 <rect key="frame" x="0.0" y="555.33333333333337" width="393" height="82"/>
                                 <color key="backgroundColor" red="0.14117647058823529" green="0.52549019607843139" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="393" id="MhI-kR-iRW"/>
                                     <constraint firstAttribute="height" constant="82" id="xIh-Xa-izX"/>
                                 </constraints>
+                                <string key="text">Dr. Amelia, a brilliant scientist, spent her days in a cluttered lab. With unwavering dedication, she tirelessly pursued her research.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -308,7 +307,7 @@
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Lm nexm dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod lllllllllllll tempor " textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="tVc-6H-43W">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Her innovation revolutionized the field, earning her worldwide recognition and accolades to  inspire generations of scientists." textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="tVc-6H-43W">
                                 <rect key="frame" x="0.0" y="555.33333333333337" width="393" height="82"/>
                                 <color key="backgroundColor" red="0.14117647058823529" green="0.52549019607843139" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -413,7 +412,7 @@
                                     <constraint firstAttribute="height" constant="86" id="11X-8p-bnJ"/>
                                     <constraint firstAttribute="width" constant="393" id="fWO-LI-0Wz"/>
                                 </constraints>
-                                <string key="text">Rem sum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut</string>
+                                <string key="text">In the deep ocean, there was an octopus named Oliver with a remarkable ability to change colors. He used his talent to make fish friends.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -459,13 +458,14 @@
                                     <segue destination="s36-zu-yzk" kind="show" id="Ldy-dN-RIn"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Em ipsum dolor sit er elit lamet, consectetaur cillium adipisicing veniam, quis nostrud exercitation " textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="wSM-yi-nUc">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="wSM-yi-nUc">
                                 <rect key="frame" x="0.0" y="555.33333333333337" width="393" height="82"/>
                                 <color key="backgroundColor" red="0.94509803921568625" green="0.75294117647058822" blue="0.72549019607843135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="393" id="HZ9-1L-eXK"/>
                                     <constraint firstAttribute="height" constant="82" id="sbM-S2-uaU"/>
                                 </constraints>
+                                <string key="text">Once in a sunny savannah, Leo the lion and Mia the mouse were unlikely pals. Leo, the king of the jungle, and Mia, a tiny mouse.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -498,13 +498,15 @@
                                 <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Next em ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempork" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="ULC-ZM-ieX">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="ULC-ZM-ieX">
                                 <rect key="frame" x="0.0" y="555.33333333333337" width="393" height="82"/>
                                 <color key="backgroundColor" red="0.94509803921568625" green="0.75294117647058822" blue="0.72549019607843135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="82" id="TLY-6K-jnJ"/>
                                     <constraint firstAttribute="width" constant="393" id="g0U-lt-dWm"/>
                                 </constraints>
+                                <string key="text">One day, a hunter's net trapped Leo. Mia chewed through the ropes. Their friendship taught everyone that size doesn't matter.
+</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
